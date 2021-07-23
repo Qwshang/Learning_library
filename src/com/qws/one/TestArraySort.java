@@ -1,9 +1,10 @@
-package day6;
+package com.qws.one;
+
 public class TestArraySort{
 	public static void main(String[] args){
 		int[] a = {8,5,4,3,7,2};
 		
-		//Ã°ÅİÅÅĞò·¨ ÏàÁÚµÄÔªËØ±È½Ï Ã¿´ÎÕÒ³ö×î´óµÄÊı
+		//å†’æ³¡æ’åºæ³• ç›¸é‚»çš„å…ƒç´ æ¯”è¾ƒ æ¯æ¬¡æ‰¾å‡ºæœ€å¤§çš„æ•°
 		/*
 		      0 1 2 3 4 5     n=6
 			  8 5 4 3 7 2
@@ -30,7 +31,7 @@ public class TestArraySort{
 		*/
 		for(int i = 0 ; i < a.length-1; i++){
 			for(int j = 0 ; j < a.length-1-i; j++){
-				//±È½Ïa[j] ºÍ a[j+1]
+				//æ¯”è¾ƒa[j] å’Œ a[j+1]
 				if (a[j] > a[j+1]){
 					int t = a[j];
 					a[j] = a[j+1];
